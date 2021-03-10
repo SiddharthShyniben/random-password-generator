@@ -1,0 +1,24 @@
+{
+  "name": "random-password-generator",
+  "version": "1.0.0",
+  "description": "A random password generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SiddharthShyniben/random-password-generator.git"
+  },
+  "keywords": [
+    "password",
+    "random",
+    "generator"
+  ],
+  "author": "SiddharthShyniben <siddharth.muscat@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SiddharthShyniben/random-password-generator/issues"
+  },
+  "homepage": "https://github.com/SiddharthShyniben/random-password-generator#readme"
+}
