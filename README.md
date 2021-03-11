@@ -14,12 +14,12 @@
   <p align="center">
     A generator of random passwords
     <br />
-    <a href="https://github.com/SiddharthShyniben/random-password-generator"><strong>Explore the docs »</strong></a>
-    <!-- TODO: fix this (these) -->
+    <a href="#documentation"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/SiddharthShyniben/random-password-generator">View Demo</a>
-    ·
+    <!-- TODO -->
+    <!-- <a href="https://github.com/SiddharthShyniben/random-password-generator">View Demo</a> -->
+    <!-- · -->
     <a href="https://github.com/SiddharthShyniben/random-password-generator/issues">Report Bug</a>
     ·
     <a href="https://github.com/SiddharthShyniben/random-password-generator/issues">Request Feature</a>
