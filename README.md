@@ -1,24 +1,13 @@
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
-
-
-<!-- PROJECT LOGO -->
 <br />
 <p align="center">
   <a href="https://github.com/SiddharthShyniben/random-password-generator">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/logo.svg" alt="Logo" width="50%">
   </a>
 
   <h3 align="center">random password generator</h3>
@@ -26,6 +15,7 @@
     A generator of random passwords
     <br />
     <a href="https://github.com/SiddharthShyniben/random-password-generator"><strong>Explore the docs »</strong></a>
+    <!-- TODO: fix this (these) -->
     <br />
     <br />
     <a href="https://github.com/SiddharthShyniben/random-password-generator">View Demo</a>
@@ -36,9 +26,6 @@
   </p>
 </p>
 
-
-
-<!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
   <ol>
@@ -56,6 +43,7 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
+    <li><a href="#documentation">Documentation</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -64,69 +52,71 @@
   </ol>
 </details>
 
-
-
-<!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+This library tries to create strong random passwords with a specified length, including and excluding certain characters. It is available as a NodeJS library.
 
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`SiddharthShyniben`, `random-password-generator`, `delete this!`, `siddharth.muscat@gmail.com`, `random password generator`, `A generator of random passwords`
+<!-- TODO: Add test data -->
 
 
 ### Built With
 
-* []()
-* []()
-* []()
+* [NodeJS](https://nodejs.org)
 
-
-
-<!-- GETTING STARTED -->
 ## Getting Started
 
 To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+You need to have [npm](https://npmjs.org) and [NodeJS](https://nodejs.org) installed. [npm](https://npmjs.org) comes with [NodeJS](https://nodejs.org).
 
 ### Installation
 
-1. Clone the repo
+You can install the package using npm. The library has no dependencies except devdependencies for running tests.
+
+1. Install using npm
    ```sh
-   git clone https://github.com/SiddharthShyniben/random-password-generator.git
-   ```
-2. Install NPM packages
-   ```sh
-   npm install
+   npm i random-password-generator
    ```
 
 
-
-<!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+```javascript
+const rpg = require('random-password-generator');
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+const password = rpg({ length: 12, includeChars: ["€"], excludeChars: ["a", "z"] });
+// => }u^1J 2kx{8€
+const password2 = rpg();
+// => vQ%hzIqmZi
+```
 
+## Documentation
 
+The usage is pretty simple. First require the module.
 
-<!-- ROADMAP -->
+```javascript
+const rpg = require('random-password-generator');
+```
+Then you can call it as a function
+
+```javascript
+const password = rpg({ length: 12, includeChars: ["€"], excludeChars: ["a", "z"] });
+```
+
+The password generated uses all the prinatble characters in the ASCII character set except the `DEL` character (code 32-126). This includes the space (`␣`). You can remove the space by setting `excludeChars` (see below)
+
+The function takes an `options` object which has the following properties: 
+* `length` (number) - The length of the password
+* `includeChars` (array of strings with length 1) - The characters to include. Nay repeats will be removed.
+* `excludeChars` (array of strings with length 1) - The characters to exclude.
+
 ## Roadmap
 
 See the [open issues](https://github.com/SiddharthShyniben/random-password-generator/issues) for a list of proposed features (and known issues).
 
 
-
-<!-- CONTRIBUTING -->
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -138,36 +128,22 @@ Contributions are what make the open source community such an amazing place to b
 5. Open a Pull Request
 
 
-
-<!-- LICENSE -->
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-
-
-<!-- CONTACT -->
 ## Contact
 
-Your Name - [@delete this!](https://twitter.com/delete this!) - siddharth.muscat@gmail.com
+Siddharth - siddharth.muscat@gmail.com
 
 Project Link: [https://github.com/SiddharthShyniben/random-password-generator](https://github.com/SiddharthShyniben/random-password-generator)
 
 
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
+<!-- ## Acknowledgements
 
 * []()
 * []()
-* []()
-
-
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+* []() -->
 
 [contributors-shield]: https://img.shields.io/github/contributors/SiddharthShyniben/random-password-generator.svg?style=flat-square
 [contributors-url]: https://github.com/SiddharthShyniben/random-password-generator/graphs/contributors
@@ -177,5 +153,5 @@ Project Link: [https://github.com/SiddharthShyniben/random-password-generator](h
 [stars-url]: https://github.com/SiddharthShyniben/random-password-generator/stargazers
 [issues-shield]: https://img.shields.io/github/issues/SiddharthShyniben/random-password-generator.svg?style=flat-square
 [issues-url]: https://github.com/SiddharthShyniben/random-password-generator/issues
-[license-shield]: https://img.shields.io/github/license/SiddharthShyniben/random-password-generator.svg?style=flat-square
-[license-url]: https://github.com/SiddharthShyniben/random-password-generator/blob/master/LICENSE.txt
+[license-shield]: https://img.shields.io/github/license/SiddharthShyniben/random-password-generator?style=flat-square
+[license-url]: https://github.com/SiddharthShyniben/random-password-generator/blob/main/LICENSE.txt
