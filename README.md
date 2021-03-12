@@ -4,6 +4,9 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![Github language count][language-shield]][language-url]
+![Snyk Vulnerabilities for npm package][vulnerabilities-shield]
+![npm bundle size][size-shield]
+![npm](shield-downloads)
 
 <br />
 <p align="center">
@@ -11,7 +14,7 @@
     <img src="images/logo.svg" alt="Logo" width="50%">
   </a>
 
-  <h3 align="center">random password generator</h3>
+  <h3 align="center">random-password-generator</h3>
   <p align="center">
     A generator of random passwords
     <br />
@@ -161,3 +164,6 @@ Project Link: [https://github.com/SiddharthShyniben/random-password-generator](h
 [license-url]: https://github.com/SiddharthShyniben/random-password-generator/blob/main/LICENSE.txt
 [language-shield]: https://img.shields.io/github/languages/count/SiddharthShyniben/random-password-generator
 [language-url]: https://github.com/SiddharthShyniben/random-password-generator
+[vulnerabilities-shield]: https://img.shields.io/snyk/vulnerabilities/npm/@siddharthshyniben/random-password-generator
+[size-shield]: https://img.shields.io/bundlephobia/min/@siddharthshyniben/random-password-generator
+[shield-downloads]: https://img.shields.io/npm/dw/@siddharthshyniben/random-password-generator
