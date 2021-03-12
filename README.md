@@ -6,7 +6,8 @@
 [![Github language count][language-shield]][language-url]
 ![Snyk Vulnerabilities for npm package][vulnerabilities-shield]
 ![npm bundle size][size-shield]
-![npm](shield-downloads)
+![npm][shield-downloads]
+![A lot of shields](https://img.shields.io/badge/A%20lot%20of%20shields-yes-blue)
 
 <br />
 <p align="center">

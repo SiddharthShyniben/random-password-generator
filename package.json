@@ -1,6 +1,6 @@
 {
   "name": "@siddharthshyniben/random-password-generator",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "A random password generator",
   "main": "index.js",
   "scripts": {
