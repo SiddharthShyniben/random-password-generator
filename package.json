@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/SiddharthShyniben/random-password-generator/issues"
   },
-  "homepage": "https://github.com/SiddharthShyniben/random-password-generator#readme"
+  "homepage": "https://github.com/SiddharthShyniben/random-password-generator#readme",
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "zxcvbn": "^4.4.2"
+  }
 }
