@@ -1,3 +1,6 @@
 datacollector.js
 datacollected.json
 index.test.js
+.github/
+.gitignore
+.gitattributes
