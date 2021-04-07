@@ -112,11 +112,11 @@ Then you can call it as a function
 const password = rpg({ length: 12, includeChars: ["€"], excludeChars: ["a", "z"] });
 ```
 
-The password generated uses all the prinatble characters in the ASCII character set except the `DEL` character (code 32-126). This includes the space (`␣`). You can remove the space by setting `excludeChars` (see below). The length of the password will be 15, the recommended length.
+The password generated uses all the printable characters in the ASCII character set except the `DEL` character (code 32-126). This includes the space (`␣`). You can remove the space by setting `excludeChars` (see below). The length of the password will be 15, the recommended length.
 
 The function takes an `options` object which has the following properties: 
 * `length` (number) - The length of the password. If it is 0 it will be set to default.
-* `includeChars` (array of strings with length 1) - The characters to include. Nay repeats will be removed.
+* `includeChars` (array of strings with length 1) - The characters to include.
 * `excludeChars` (array of strings with length 1) - The characters to exclude.
 
 ## Roadmap
@@ -151,7 +151,9 @@ Project Link: [https://github.com/SiddharthShyniben/random-password-generator](h
 
 * []()
 * []()
-* []() -->
+* []() 
+
+-->
 
 [contributors-shield]: https://img.shields.io/github/contributors/SiddharthShyniben/random-password-generator.svg
 [contributors-url]: https://github.com/SiddharthShyniben/random-password-generator/graphs/contributors
